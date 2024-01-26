@@ -1,11 +1,9 @@
-theme = "custom_dark_plus"
-
-
+theme = "nord_dark2"
 
 [editor]
 scrolloff = 10
-line-number = "relative"
-bufferline = "multiple"
+line-number = "absolute"
+bufferline = "always"
 scroll-lines = 3
 mouse = true
 color-modes = true
@@ -17,7 +15,7 @@ auto-format = true
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 [editor.lsp]
 display-messages = true
@@ -45,3 +43,5 @@ ret = ["move_line_down", "goto_first_nonwhitespace"]
 
 [keys.normal.space]
 "i" = ":toggle lsp.display-inlay-hints"
+"c" = ":set gutters.line-numbers.min-width 30"
+"C" = ":set gutters.line-numbers.min-width 1"

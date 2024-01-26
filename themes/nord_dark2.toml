@@ -1,0 +1,135 @@
+# Polar Night
+# nord0 - background color
+"ui.background" = { bg = "#030e12" }
+"ui.statusline.inactive" = { fg = "#d8dEE9", bg = "#2e3440" }
+
+
+# nord1 - statW Òus bars, panels, modals, autocompletion
+"ui.statusline" = { fg = "#88c0d0", bg = "#3b4252" }
+"ui.popup" = { bg = "#232d38" }
+"ui.window" = { bg = "#232d38" }
+"ui.help" = { bg = "#232d38", fg = "#e5ded6" }
+
+# nord2 - active line, highlighting
+"ui.selection" = { bg = "#5e81ac" }
+"ui.cursor.match" = { bg = "#434c5e" } # The matching parentheses of that under the cursor.
+"ui.virtual.indent-guide" = { fg = "#2e3440" } # Vertical indent width guides
+"ui.virtual.inlay-hint" = { fg = "#222138" } # Default style for inlay hints of all kinds
+
+# nord3 - comments
+"comment" = "#434c5e"
+"ui.linenr" = { fg = "#434c5e" }
+"ui.linenr.selected" = { fg = "#d8dee9" } # Current line number.
+
+# Snow Storm
+# nord4 - cursor, variables, constants, attributes, fields
+"ui.cursor.primary" = { fg = "#9DA2AC", modifiers = ["reversed"] }
+"attribute" = "#red"
+"variable"  = "#d8dee9"
+"variable.builtin" = "#1E2E32" # Language reserved variables: `this`, `self`, `super`, etc. 
+"variable.parameter" = "#5e81ac" # Function parameters.
+"variable.other.member" = "#5e81fd" # Fields of composite data types (e.g. structs, unions).
+"constant" = "#d8def0"
+"constant.builtin" = "#d8dee9"
+"constant.builtin.boolean" = "#afb9ff" # True or False.
+"namespace" = "#d8dee9"
+
+# nord5 - suble UI text
+
+# nord6 - base text, punctuation
+"ui.text" = { fg = "#434c5e" }
+"ui.text.focus" = { fg = "#434c5e", bg = "#778295" } # Selection highlight in buffer-picker or file-picker.
+"punctuation" = "#DCEEE7"
+
+# Frost
+# nord7 - classes, types, primiatives
+"type" = "#8fbcbb"
+"type.builtin" = { fg = "#8fbcbb"}
+"type.enum.variant" = "#54807f" # A variant of an enum.
+"label" = "#8fbcbb"
+
+# nord8 - declaration, methods, routines
+"constructor" = "#88c0d0"
+"function" = "#88c0d0"
+"function.macro" = { fg = "#d08770" }
+"function.builtin" = { fg = "#bf616a" }
+
+# nord9 - operator, tags, units, punctuations
+"punctuation.delimiter" = "#81a1c1"
+"punctuation.bracket" = "#66898D"
+"operator" = { fg = "#81a1c1" }
+"property" = "#81a1c1"
+
+# nord10 - keywords, special
+"keyword" = { fg = "#175a61" }
+"keyword.directive" = "#5e81ac"
+# "variable.parameter" = "##2ba1ad"
+"keyword.function" = "#b48ead" # The keyword to define a function: "def", "fun", "fn".
+
+# Aurora
+# nord11 - error
+"error" = "#bf616a"
+
+# nord12 - annotations, decorators
+"special" = "#d08770"
+"module" = "#d08770"
+
+# nord13 - warnings, escape characters, regex
+"warning" = "#ebcb8b"
+"escape" = { fg = "#ebcb8b" }
+
+# nord14 - strings
+"string" = "#a3be8c"
+
+# nord15 - integer, floating point
+"number" = "#b48ead"
+
+# Diff ==============================
+# Version control changes.
+
+"diff.plus" =  { fg = "#6A9955" } # Additions.
+"diff.minus" = { fg = "#cca700" } # Deletions.
+"diff.delta" = { fg = "#0e687c7b" } # Modifications.
+"diff.delta.moved" = { fg = "#bf616a" } # Renamed or moved files.
+
+# Markup ==============================
+# Colors for markup languages, like Markdown or XML.
+
+# "markup.heading.1" = { } # Markdown heading 1 color.
+# "markup.heading.2" = { } # Markdown heading 2 color.
+# "markup.heading.3" = { } # Markdown heading 3 color.
+# "markup.heading.4" = { } # Markdown heading 4 color.
+# "markup.heading.5" = { } # Markdown heading 5 color.
+# "markup.heading.6" = { } # Markdown heading 6 color.
+# "markup.heading.marker" = { } # Hashtag color on Markdown headings.
+
+# "markup.list" = { }
+# "markup.list.numbered" = { } # Numbered list.
+# "markup.list.unnumbered" = { } # Bullet point list.
+
+# "markup.bold" = { } # Bold text.
+# "markup.italic" = { } # Italicised text.
+
+# "markup.link" = { }
+# "markup.link.url" = { } # Urls pointed to by links.
+# "markup.link.label" = { } # Non-URL link references.
+# "markup.link.text" = { } # URL and image descriptions in links.
+
+# "markup.quote" = { } # `> Quotes` in Markdown.
+
+
+# # Markup - Interface ==============================
+# # "These scopes are used for theming the editor interface."
+
+# "markup.normal" = { }
+# "markup.normal.completion" = { } # For completion doc popup ui.
+# "markup.normal.raw" = { } # For hover popup ui.
+
+# "markup.heading.completion" = { } # Headings for completion doc popup ui.
+# "markup.heading.raw" = { } # Headings for hover popup ui.
+
+# "markup.raw" = { } # Code block in Markdown.
+# "markup.raw.block" = { } # Multiline (```) codeblock in Markdown.
+# "markup.raw.inline" = { } # `Inline code block` in Markdown.
+# "markup.raw.inline.completion" = { } # ?
+# "markup.raw.inline.hover" = { } # ?
