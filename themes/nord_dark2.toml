@@ -3,21 +3,25 @@
 "ui.background" = { bg = "#030e12" }
 "ui.statusline.inactive" = { fg = "#d8dEE9", bg = "#2e3440" }
 
+"markup.normal" = { bg = "#434c5e"  }
+"markup.normal.completion" = { bg = "#434c5e" } # For completion doc popup ui.
+"markup.normal.raw" = { bg = "#434c5e" } # For hover popup ui.
 
-# nord1 - statW Òus bars, panels, modals, autocompletion
-"ui.statusline" = { fg = "#88c0d0", bg = "#3b4252" }
-"ui.popup" = { bg = "#232d38" }
-"ui.window" = { bg = "#232d38" }
-"ui.help" = { bg = "#232d38", fg = "#e5ded6" }
+
+# nord1 - status bars, panels, modals, autocompletion
+"ui.sta tusline" = { fg = "#88c0d0", bg = "#3b4252" }
+"ui.popup" = { fg = "#88c0d0",bg = "#232d38" } 
+"ui.menu" = { bg = "#434c5e" }
+"ui.menu.selected" = "#8fbcbb"
 
 # nord2 - active line, highlighting
-"ui.selection" = { bg = "#5e81ac" }
+"ui.selection" = { bg = "#434c5e" }
 "ui.cursor.match" = { bg = "#434c5e" } # The matching parentheses of that under the cursor.
 "ui.virtual.indent-guide" = { fg = "#2e3440" } # Vertical indent width guides
 "ui.virtual.inlay-hint" = { fg = "#222138" } # Default style for inlay hints of all kinds
 
 # nord3 - comments
-"comment" = "#434c5e"
+"comment" = "#4c566a"
 "ui.linenr" = { fg = "#434c5e" }
 "ui.linenr.selected" = { fg = "#d8dee9" } # Current line number.
 
@@ -83,6 +87,8 @@
 
 # nord15 - integer, floating point
 "number" = "#b48ead"
+
+"diagnostic" = { modifiers = ["underlined"] }
 
 # Diff ==============================
 # Version control changes.
