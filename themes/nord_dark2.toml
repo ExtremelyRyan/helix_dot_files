@@ -1,74 +1,78 @@
 # Polar Night
 # nord0 - background color
-"ui.background" = { bg = "#030e12" }
-"ui.statusline.inactive" = { fg = "#d8dEE9", bg = "#2e3440" }
+"ui.background" = { bg = "#181A21" }
+"ui.statusline.inactive" = { fg = "#d8dEE9", bg = "#181A21" }
 
-"markup.normal" = { bg = "#434c5e"  }
-"markup.normal.completion" = { bg = "#434c5e" } # For completion doc popup ui.
-"markup.normal.raw" = { bg = "#434c5e" } # For hover popup ui.
+"markup.normal" = { bg = "#181A21"  }
+"markup.normal.completion" = { bg = "#181A21" } # For completion doc popup ui.
+"markup.normal.raw" = { bg = "#181A21" } # For hover popup ui.
 
 
 # nord1 - status bars, panels, modals, autocompletion
-"ui.sta tusline" = { fg = "#88c0d0", bg = "#3b4252" }
-"ui.popup" = { fg = "#88c0d0",bg = "#232d38" } 
-"ui.menu" = { bg = "#434c5e" }
+"ui.statusline" = { fg = "#d8dee9", bg = "#232730" }
+"ui.popup" = { fg = "#88c0d0",bg = "#181A21" } 
+"ui.menu" = { bg = "#181A21" }
 "ui.menu.selected" = "#8fbcbb"
 
 # nord2 - active line, highlighting
-"ui.selection" = { bg = "#434c5e" }
+"ui.selection" = { bg = "#2e3440" }
 "ui.cursor.match" = { bg = "#434c5e" } # The matching parentheses of that under the cursor.
 "ui.virtual.indent-guide" = { fg = "#2e3440" } # Vertical indent width guides
-"ui.virtual.inlay-hint" = { fg = "#222138" } # Default style for inlay hints of all kinds
+"ui.virtual.inlay-hint" = { fg = "#88c0d0", modifiers = ["dim"] } # Default style for inlay hints of all kinds
 
 # nord3 - comments
-"comment" = "#4c566a"
+"comment" = "#708090"
 "ui.linenr" = { fg = "#434c5e" }
 "ui.linenr.selected" = { fg = "#d8dee9" } # Current line number.
 
 # Snow Storm
 # nord4 - cursor, variables, constants, attributes, fields
 "ui.cursor.primary" = { fg = "#9DA2AC", modifiers = ["reversed"] }
-"attribute" = "#red"
+# "attribute" = "#9DA2AC"
 "variable"  = "#d8dee9"
-"variable.builtin" = "#1E2E32" # Language reserved variables: `this`, `self`, `super`, etc. 
-"variable.parameter" = "#5e81ac" # Function parameters.
-"variable.other.member" = "#5e81fd" # Fields of composite data types (e.g. structs, unions).
+"variable.builtin" = "#afb9ff" # Language reserved variables: `this`, `self`, `super`, etc. 
+"variable.parameter" = "#9DA2AC" # Function parameters.
+"variable.other.member" = "#5e81ac" # Fields of composite data types (e.g. structs, unions).
 "constant" = "#d8def0"
 "constant.builtin" = "#d8dee9"
 "constant.builtin.boolean" = "#afb9ff" # True or False.
+"constant.numeric" = "#8fbcbb"
 "namespace" = "#d8dee9"
 
 # nord5 - suble UI text
 
 # nord6 - base text, punctuation
-"ui.text" = { fg = "#434c5e" }
-"ui.text.focus" = { fg = "#434c5e", bg = "#778295" } # Selection highlight in buffer-picker or file-picker.
+"ui.text" = { fg = "#d8dee9"}
+"ui.text.focus" = { fg = "#d8dee9", bg = "#232730" } # Selection highlight in buffer-picker or file-picker.
 "punctuation" = "#DCEEE7"
 
 # Frost
 # nord7 - classes, types, primiatives
-"type" = "#8fbcbb"
-"type.builtin" = { fg = "#8fbcbb"}
+"type" = "#bac6db"
+"type.builtin" = { fg = "#778295"}
 "type.enum.variant" = "#54807f" # A variant of an enum.
 "label" = "#8fbcbb"
 
 # nord8 - declaration, methods, routines
-"constructor" = "#88c0d0"
+"constructor" = "#54807f"
 "function" = "#88c0d0"
-"function.macro" = { fg = "#d08770" }
+"function.macro" = { fg = "#b48ead" }
 "function.builtin" = { fg = "#bf616a" }
 
 # nord9 - operator, tags, units, punctuations
-"punctuation.delimiter" = "#81a1c1"
-"punctuation.bracket" = "#66898D"
+"punctuation.delimiter" = "#bac6db"
+"punctuation.bracket" = "#bac6db"
 "operator" = { fg = "#81a1c1" }
 "property" = "#81a1c1"
 
 # nord10 - keywords, special
-"keyword" = { fg = "#175a61" }
-"keyword.directive" = "#5e81ac"
+"keyword" = { fg = "#afb9ff" }
+"keyword.directive" = "#81a1c1"
 # "variable.parameter" = "##2ba1ad"
 "keyword.function" = "#b48ead" # The keyword to define a function: "def", "fun", "fn".
+"keyword.control.repeat" = "#b48ead" # `for`, `while`, `loop`.
+"keyword.control.import" = "#81a1c1" # `import`, `export` `use`.
+"keyword.control.return" = "#ebcb8b" # `return` in most languages.
 
 # Aurora
 # nord11 - error
