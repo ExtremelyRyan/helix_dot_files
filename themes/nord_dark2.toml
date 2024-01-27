@@ -5,20 +5,20 @@
 
 "markup.normal" = { bg = "#181A21"  }
 "markup.normal.completion" = { bg = "#181A21" } # For completion doc popup ui.
-"markup.normal.raw" = { bg = "#181A21" } # For hover popup ui.
+"markup.normal.raw" = { bg = "#434c5e" } # For hover popup ui.
 
 
 # nord1 - status bars, panels, modals, autocompletion
 "ui.statusline" = { fg = "#d8dee9", bg = "#232730" }
-"ui.popup" = { fg = "#88c0d0",bg = "#181A21" } 
-"ui.menu" = { bg = "#181A21" }
+"ui.popup" = { fg = "#88c0d0",bg = "#232730" } 
+"ui.menu" = { bg = "#232730" }
 "ui.menu.selected" = "#8fbcbb"
 
 # nord2 - active line, highlighting
 "ui.selection" = { bg = "#2e3440" }
 "ui.cursor.match" = { bg = "#434c5e" } # The matching parentheses of that under the cursor.
 "ui.virtual.indent-guide" = { fg = "#2e3440" } # Vertical indent width guides
-"ui.virtual.inlay-hint" = { fg = "#88c0d0", modifiers = ["dim"] } # Default style for inlay hints of all kinds
+"ui.virtual.inlay-hint" = { fg = "#434c5e" } # Default style for inlay hints of all kinds
 
 # nord3 - comments
 "comment" = "#708090"
