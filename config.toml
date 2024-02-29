@@ -40,8 +40,14 @@ ret = ["move_line_down", "goto_first_nonwhitespace"]
 "C-d" = ["half_page_down", "goto_window_center"]
 "C-u" = ["half_page_up", "goto_window_center"]
 "D" = ["ensure_selections_forward", "extend_to_line_end"]
+X = ["extend_line_up", "extend_to_line_bounds"]
 
 [keys.normal.space]
 "i" = ":toggle lsp.display-inlay-hints"
 "c" = ":set gutters.line-numbers.min-width 30"
 "C" = ":set gutters.line-numbers.min-width 1"
+
+
+[keys.select]
+X = ["extend_line_up", "extend_to_line_bounds"]
+A-x = "extend_to_line_bounds"
