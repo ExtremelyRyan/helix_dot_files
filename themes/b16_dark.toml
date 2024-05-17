@@ -1,0 +1,171 @@
+"type" = "blue"
+"constant" = "diff_red" 
+"constant.numeric" = "numbers"
+"constant.character.escape" = "cyan"
+"string" = "green"
+"string.regexp" = "orange"
+"comment" = "grey"
+"variable" = "fg"
+"variable.builtin" = "yellow"
+"variable.parameter" = "fg"
+"variable.other.member" = "fg"
+"label" = "orange"
+"punctuation" = "grey"
+"punctuation.delimiter" = "grey"
+"punctuation.bracket" = "fg"
+"keyword" = "purple"
+"keyword.control" = "#B8A1E2"
+"keyword.directive" = "cyan"
+"operator" = "red"
+"function" = "green"
+# "function.builtin" = "yellow"
+# "function.method" = "yellow"
+"function.macro" = "macro"
+"tag" = "yellow"
+"namespace" = "bg3"
+"attribute" = "cyan"
+"constructor" = "yellow"
+"module" = "red"
+"special" = "orange"
+
+"markup.heading.marker" = "grey"
+"markup.heading.1" = { fg = "purple", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "red", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "yellow", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "fg", modifiers = ["bold"] }
+"markup.list" = "red"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "green", modifiers = ["underlined"] }
+"markup.link.text" = "purple"
+"markup.quote" = "grey"
+"markup.raw" = "green"
+
+"diff.plus" = "green"
+"diff.delta" = "orange"
+"diff.minus" = "red"
+
+"ui.background" = { bg = "black" }
+"ui.background.separator" = "grey"
+"ui.cursor" = { fg = "bg0", bg = "fg" }
+"ui.cursor.match" = { fg = "orange", bg = "diff_yellow" }
+"ui.cursor.insert" = { fg = "black", bg = "grey" }
+"ui.cursor.select" = { fg = "bg0", bg = "blue" }
+"ui.cursorline.primary" = { bg = "bg1" }
+"ui.cursorline.secondary" = { bg = "bg1" }
+"ui.selection" = { bg = "bg4" }
+"ui.linenr" = "grey"
+"ui.linenr.selected" = "fg"
+"ui.statusline" = { fg = "fg", bg = "bg3" }
+"ui.statusline.inactive" = { fg = "grey", bg = "bg1" }
+"ui.statusline.normal" = { fg = "bg0", bg = "fg", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg0", bg = "purple", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg0", bg = "blue", modifiers = ["bold"] }
+"ui.popup" = { fg = "grey", bg = "bg2" }
+"ui.window" = { fg = "grey", bg = "bg0" }
+"ui.help" = { fg = "fg", bg = "bg1" }
+"ui.text" = "fg"
+"ui.text.focus" = "green"
+"ui.menu" = { fg = "fg", bg = "bg2" }
+"ui.menu.selected" = { fg = "bg0", bg = "blue" }
+"ui.virtual.whitespace" = { fg = "bg4" }
+"ui.virtual.indent-guide" = { fg = "bg4" }
+"ui.virtual.ruler" = { bg = "bg2" }
+"ui.virtual.inlay-hint" = { fg = "diff_blue", bg = "black" } 
+
+"hint" = "blue"
+"info" = "green"
+"warning" = "yellow"
+"error" = "red"
+"diagnostic" = { modifiers = ["underlined"] }
+
+[palette]
+
+black = "#202023"
+bg0 = "#1a1e21"
+bg1 = "#333648"
+bg2 = "#363a4e"
+bg3 = "#393e53"
+bg4 = "#3f445b"
+bg_grey = "#7a819d"
+bg_red = "#ec7279"
+diff_red = "#55393d"
+bg_green = "#a0c980"
+diff_green = "#394634"
+bg_blue = "#6cb6eb"
+diff_blue = "#354157"
+bg_purple = "#d38aea"
+diff_yellow = "#4e432f"
+fg = "#c5cdd9"
+red = "#DD798B"
+orange = "#CFA58D" # added for compatibility with `sonokai` scheme
+yellow = "#deb974"
+green = "#2D4B2D"
+macro = "#6F330E"
+cyan = "#5dbbc1"
+blue = "#8FC4EB"
+numbers = "#57B2CE"
+purple = "#DBB6E7"
+func = "#E7DFB9"
+grey = "#7e8294"
+grey_dim = "#5c6071"
+
+
+# "ui.background" = { bg = "base00" }
+# "ui.menu" = "base01"
+# "ui.menu.selected" = { fg = "base04", bg = "base01" }
+# "ui.linenr" = {fg = "base01" }
+# "ui.popup" = { bg = "base01" }
+# "ui.window" = { bg = "base01" }
+# "ui.liner.selected" = "base03"
+# "ui.selection" = "base03"
+# "comment" = "base0B"
+# "ui.statusline" = {fg = "base04", bg = "base01" }
+# "ui.help" = { fg = "base04", bg = "base01" }
+# "ui.cursor" = { fg = "base05", modifiers = ["reversed"] }
+# "ui.text" = { fg = "base05" }
+# "operator" = "base05"
+# "ui.text.focus" = { fg = "base05" }
+# "variable" = "base08"
+# "number" = "base09"
+# "constant" = "base09"
+# "attributes" = "base09" 
+# "type" = "base0A"
+# "ui.cursor.match" = { fg = "base0A", modifiers = ["underlined"] }
+# "strings"  = "base0B"
+# "property" = "base0B"
+# "escape" = "base0C"
+# "function" = "base0D"
+# "constructor" = "base0D"
+# "special" = "base0D"
+# "keyword" = "base0E"
+# "label" = "base0E"
+# "namespace" = "base03"
+# # "ui.window" = { bg = "base00" }
+# # "ui.help" = { bg = "base01", fg = "base06" }
+
+# "info" = "base03"
+# "hint" = "base03"
+# "debug" = "base03"
+# "diagnostic" = "base03"
+# "error" = "base0E"
+
+# [palette]
+# base00 = "#1a1e21" # Default Background
+# base01 = "#383838" # Lighter Background (Used for status bars, line number and folding marks)
+# base02 = "#45425cb5" # Selection Background 383838
+# base03 = "#585858" # Comments, Invisibles, Line Highlighting
+# base04 = "#b8b8b8" # Dark Foreground (Used for status bars)
+# base05 = "#d8d8d8" # Default Foreground, Caret, Delimiters, Operators
+# base06 = "#e8e8e8" # Light Foreground (Not often used)
+# base07 = "#f8f8f8" # Light Background (Not often used)
+# base08 = "#9cd1d3e8" # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+# base09 = "#dc9656" # Integers, Boolean, Constants, XML Attributes, Markup Link Url
+# base0A = "#f7ca88" # Classes, Markup Bold, Search Text Background
+# base0B = "#a1b56c" # Strings, Inherited Class, Markup Code, Diff Inserted
+# base0C = "#86c1b9" # Support, Regular Expressions, Escape Characters, Markup Quotes
+# base0D = "#7cafc2" # Functions, Methods, Attribute IDs, Headings
+# base0E = "#ba8baf" # Keywords, Storage, Selector, Markup Italic, Diff Changed
+# base0F = "#a16946" # Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
