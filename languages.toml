@@ -1,5 +1,3 @@
-# Note: this key must come **before** the [[language]] and [[grammar]] sections
-use-grammars = { only = [ "rust", "c", "cpp", "c-sharp" , "python" ] }
 
 [[language]]
 name = "rust"

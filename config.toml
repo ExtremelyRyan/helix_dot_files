@@ -1,23 +1,23 @@
 theme = "custom_dark_plus"
 
-
-
 [editor]
 scrolloff = 10
-line-number = "relative"
 bufferline = "multiple"
 scroll-lines = 3
 mouse = true
 color-modes = true
 # Resolve true color detection problems (e.g. on Linux in Windows WSL2)
-# such as the error, "theme: theme requires true color support".
+# such as the error, "theme: theme requires true color support"
 true-color = true
-auto-format = true
+popup-border = "all"
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.file-picker]
+hidden = false
 
 [editor.lsp]
 display-messages = true
@@ -25,7 +25,7 @@ display-inlay-hints = true
 
 [editor.statusline]
 left = ["mode", "spinner", "version-control", "file-name" ]
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+right = ["diagnostics", "workspace-diagnostics" , "selections", "position", "file-encoding", "file-line-ending", "file-type"]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
@@ -43,5 +43,32 @@ ret = ["move_line_down", "goto_first_nonwhitespace"]
 "C-u" = ["half_page_up", "goto_window_center"]
 "D" = ["ensure_selections_forward", "extend_to_line_end"]
 
+C-x = "extend_to_line_bounds"
+X = ["extend_line_up", "extend_to_line_bounds"]
+
+
 [keys.normal.space]
 "i" = ":toggle lsp.display-inlay-hints"
+"\\" = ":reload-all"
+"=" = ":format"
+x = ":buffer-close!"
+
+
+# Add comma to the end of the line,
+"," = [
+    "save_selection",
+    "goto_line_end",
+    ":append-output echo ',''",
+    "collapse_selection",
+    "delete_selection",
+    "jump_backward",
+]
+# Add semicolumn to the end of the line
+";" = [
+    "save_selection",
+    "goto_line_end",
+    ":append-output echo ';'",
+    "collapse_selection",
+    "delete_selection",
+    "jump_backward",
+]
