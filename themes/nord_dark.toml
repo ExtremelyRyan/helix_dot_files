@@ -1,0 +1,232 @@
+
+# Template document for helix color schemes
+# See also: https://docs.helix-editor.com/themes.html
+#
+# NOTE: Keys default to the most specific parent value.
+#       e.g ui.cursor.primary > ui.cursor > ui
+
+
+
+# GENERAL ==============================
+
+warning = { fg = "nord_red" } # Editor warnings.
+error = { fg = "nord_red" } # Editor errors, like mis-typing a command.
+info = { fg = "light_blue" } # Contextual info in diagnostic messages (LSP).
+hint = { fg = "light_gray3" } # Code diagnostics hints (LSP).
+diagnostic = { } # Code diagnostics in editing area (LSP).
+
+# UI ==============================
+# For styling helix itself.
+
+'ui.background' = {  bg = "background"} # Default background color.
+'ui.window' = { bg = "#5e81ac" } # Window border between splits.
+'ui.gutter' = { } # Left gutter for diagnostics and breakpoints.
+
+'ui.text' = { fg = "#434c5e" } # Default text color.
+'ui.text.focus' = {  bg = "#5e81ac" } # Selection highlight in buffer-picker or file-picker.
+'ui.text.info' = { fg = "#eceff4", bg = "background" } # Info popup contents (space mode menu).
+
+# 'ui.cursor' = { bg = "dark_gray3" } # Fallback cursor colour, non-primary cursors when there are multiple (shift-c).
+'ui.cursor.primary' = { fg = "#d8dee9", modifiers = ["reversed"] } # The primary cursor when there are multiple (shift-c).
+'ui.cursor.insert' = {  } # The cursor in insert mode (i).
+'ui.cursor.select' = {  } # The cursor in select mode (v).
+'ui.cursor.match' = { bg = "#434c5e" } # The matching parentheses of that under the cursor.
+
+'ui.selection' = { fg = "#434c5e" } # All currently selected text.
+'ui.selection.primary' = { bg = "nord_blue" } # The primary selection when there are multiple.
+
+'ui.linenr' = "#434c5e" # Line numbers.
+'ui.linenr.selected' = { fg = "#d8dee9" } # Current line number.
+
+'ui.virtual' = { } # Namespace for additions to the editing area.
+'ui.virtual.ruler' = { bg = "borders" } # Vertical rulers (colored columns in editing area).
+'ui.virtual.whitespace' = { fg = "#2e3440" } # Whitespace markers in editing area.
+"ui.virtual.indent-guide" = { fg = "#2e3440" } # Vertical indent width guides
+"ui.virtual.inlay-hint" = { fg = "#2e3440" } # Default style for inlay hints of all kinds
+
+'ui.statusline' = {  fg = "#88c0d0", bg = "#3b4252" } # Status line.
+'ui.statusline.inactive' = { fg = "#d8dEE9", bg = "#2e3440" } # Status line in unfocused windows.
+# "ui.statusline.normal" = {  } # Statusline mode during normal mode (only if editor.color-modes is enabled)
+# "ui.statusline.insert" = { fg = "white", bg = "yellow" } # Statusline mode during insert mode (only if editor.color-modes is enabled)
+# "ui.statusline.select" = { fg = "white", bg = "magenta" } # Statusline mode during select mode (only if editor.color-modes is enabled)
+
+'ui.help' = { fg = "text", bg = "#5e81ac" } # `:command` descriptions above the command line.
+
+'ui.highlight' = { bg = "#434c5e" } # selected contents of symbol pickers (spc-s, spc-S) and current line in buffer picker (spc-b).
+
+'ui.menu' = { bg = "#5e81ac" } # Autocomplete menu.
+'ui.menu.selected' = { bg = "#d8dee9" } # Selected autocomplete item.
+
+'ui.popup' = { bg = "#232d38" } # Documentation popups (space-k).
+'ui.popup.info' = "#232d38"  # Info popups box (space mode menu).
+
+ 
+# SYNTAX HIGHLIGHTING ==============================
+# All the keys here are Treesitter scopes.
+
+'property' = "#81a1c1" # Regex group names.
+'special' = "#d08770" # Special symbols e.g `?` in Rust, `...` in Hare.
+'attribute' = "#d8dee9" # Class attributes, html tag attributes.
+
+'type' = "#8fbcbb" # Variable type, like integer or string, including program defined classes, structs etc..
+'type.builtin' = "#8fbcbb" # Primitive types of the language (string, int, float).
+'type.enum.variant' = "#54807f" # A variant of an enum.
+
+'constructor' = "#88c0d0" # Constructor method for a class or struct.
+
+'constant' = "#d8dee9" # Constant value
+'constant.builtin' = "#d8dee9" # Special constants like `true`, `false`, `none`, etc.
+'constant.builtin.boolean' = "nord_purple2" # True or False.
+'constant.character' = "#d8dee9" # Constant of character type.
+'constant.character.escape' = "nord_purple2" # escape codes like \n.
+'constant.numeric'  = "nord_blue1" # constant integer or float value.
+'constant.numeric.integer' = "nord_blue2" # constant integer value.
+'constant.numeric.float' = "nord_blue3" # constant float value.
+
+'string' = "#a3be8c" # String literal.
+'string.regexp' = { } # Regular expression literal.
+'string.special' = { } # Strings containing a path, URL, etc.
+'string.special.path' = { } # String containing a file path.
+'string.special.url' = { } # String containing a web URL.
+'string.special.symbol' = { } # Erlang/Elixir atoms, Ruby symbols, Clojure keywords.
+
+'comment' = "#4c566a" # This is a comment.
+'comment.line' = { } # Line comments, like this.
+'comment.block' = { } # Block comments, like /* this */ in some languages.
+# 'comment.block.documentation' = "nord_ice" # Doc comments, e.g '///' in rust.
+
+'variable' = "nord_ice" # Variable names.
+'variable.builtin' = "#88c0d0" # Language reserved variables: `this`, `self`, `super`, etc.
+'variable.parameter' = "#5e81ac" # Function parameters.
+'variable.other.member' = "#5e81fd" # Fields of composite data types (e.g. structs, unions).
+
+'label' = "#8fbcbb" # Loop labels, among other things.
+
+'punctuation' = "#81a1c1" # Any punctuation symbol.
+'punctuation.delimiter' = { } # Commas, colons or other delimiter depending on the language.
+'punctuation.bracket' = { } # Parentheses, angle brackets, etc.
+
+'keyword' = { fg = "#5e81ac" } # Language reserved keywords.
+'keyword.control' = { } # Control keywords.
+'keyword.control.conditional' = { fg = "#5e81ac" } # `if`, `else`, `elif`.
+'keyword.control.repeat' = { } # `for`, `while`, `loop`.
+'keyword.control.import' = { } # `import`, `export` `use`.
+'keyword.control.return' = { } # `return` in most languages.
+'keyword.control.exception' = { } # `try`, `catch`, `raise`/`throw` and related.
+'keyword.operator' = { } # `or`, `and`, `in`.
+'keyword.directive' = "#88c0d0" # Preprocessor directives (#if in C...).
+'keyword.function' = "#b48ead" # The keyword to define a function: 'def', 'fun', 'fn'.
+
+'operator' = { fg = "#81a1c1" } # Logical, mathematical, and other operators.
+
+'function' = "#88c0d0"
+'function.builtin' = { fg = "#88c0d0" }
+'function.method' = "#d08770" # Class / Struct methods.
+'function.macro' = { fg = "#88c0d0"}
+'function.special' = { fg = "#88c0d0" } # Preprocessor function in C.
+
+'tag' = { } # As in <body> for html, css tags.
+'tag.error' = { } # Erroneous closing html tags.
+
+'namespace' = "#d8dee9" # Namespace or module identifier.
+
+"number" = "#b48ead"
+
+
+# Markup ==============================
+# Colors for markup languages, like Markdown or XML.
+
+# 'markup.heading.1' = { } # Markdown heading 1 color.
+# 'markup.heading.2' = { } # Markdown heading 2 color.
+# 'markup.heading.3' = { } # Markdown heading 3 color.
+# 'markup.heading.4' = { } # Markdown heading 4 color.
+# 'markup.heading.5' = { } # Markdown heading 5 color.
+# 'markup.heading.6' = { } # Markdown heading 6 color.
+# 'markup.heading.marker' = { } # Hashtag color on Markdown headings.
+
+# 'markup.list' = { }
+# 'markup.list.numbered' = { } # Numbered list.
+# 'markup.list.unnumbered' = { } # Bullet point list.
+
+# 'markup.bold' = { } # Bold text.
+# 'markup.italic' = { } # Italicised text.
+
+# 'markup.link' = { }
+# 'markup.link.url' = { } # Urls pointed to by links.
+# 'markup.link.label' = { } # Non-URL link references.
+# 'markup.link.text' = { } # URL and image descriptions in links.
+
+# 'markup.quote' = { } # `> Quotes` in Markdown.
+
+
+# # Markup - Interface ==============================
+# # "These scopes are used for theming the editor interface."
+
+# 'markup.normal' = { }
+# 'markup.normal.completion' = { } # For completion doc popup ui.
+# 'markup.normal.raw' = { } # For hover popup ui.
+
+# 'markup.heading.completion' = { } # Headings for completion doc popup ui.
+# 'markup.heading.raw' = { } # Headings for hover popup ui.
+
+# 'markup.raw' = { } # Code block in Markdown.
+# 'markup.raw.block' = { } # Multiline (```) codeblock in Markdown.
+# 'markup.raw.inline' = { } # `Inline code block` in Markdown.
+# 'markup.raw.inline.completion' = { } # ?
+# 'markup.raw.inline.hover' = { } # ?
+
+# Diff ==============================
+# Version control changes.
+
+'diff.plus' =  { fg = "dark_green2" } # Additions.
+'diff.minus' = { fg = "orange_red" } # Deletions.
+'diff.delta' = { fg = "blue4" } # Modifications.
+'diff.delta.moved' = { fg = "orange_red" } # Renamed or moved files.
+
+
+[palette] # Define your custom colors here.
+# white = "#ffffff"
+# orange = "#ce9178"
+# gold = "#d7ba7d"
+# gold2 = "#cca700"
+# pale_green = "#b5cea8"
+# dark_green = "#6A9955"
+# dark_green2 = "#487e02"
+# light_gray = "#d4d4d4"
+# light_gray2 = "#c6c6c6"
+# light_gray3 = "#eeeeee"
+# dark_gray = "#858585"
+# dark_gray2 = "#1e1e1e"
+# dark_gray3 = "#282828"
+# dark_gray4 = "#404040"
+# dark_gray5 = "#8b949e"
+# blue = "#007acc"
+# blue2 = "#569CD6"
+# blue3 = "#6796E6"
+# blue4 = "#1b81a8"
+# light_blue = "#75beff"
+# dark_blue = "#264f78"
+# dark_blue2 = "#094771"
+# red = "#ff1212"
+# orange_red = "#f14c4c"
+
+type = "#4EC9B0"
+special = "#C586C0"
+variable = "#9CDCFE"
+fn_declaration = "#DCDCAA"
+constant = "#4FC1FF"
+
+background = "#212121"
+text = "#eceff4"
+cursor = "#a6a6a6"
+widget = "#252526"
+borders = "#323232"
+
+nord_ice = "#d8dee9"
+nord_blue1 = "#88c0d0"
+nord_blue2 = "#0e687c7b"
+nord_blue3 = "#8fbcbb"
+nord_purple = "#b48ead"
+nord_purple2 = "#afb9ff"
+nord_yellow = "#ebcb8b"
+nord_red = "#bf616a"
