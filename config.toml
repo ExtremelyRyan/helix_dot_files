@@ -1,4 +1,4 @@
-theme = "mutable"
+theme = "mutable2"
 
 [editor]
 scrolloff = 10
@@ -31,22 +31,25 @@ mode.select = "SELECT"
 [keys.normal]
 # handles multi-cursors and multi line visual selections with a single key
 esc = ["collapse_selection", "keep_primary_selection"]
-"A-," = "goto_previous_buffer"
-"A-." = "goto_next_buffer"
-"A-w" = ":buffer-close"
-"A-/" = "repeat_last_motion"
 ret = ["move_line_down", "goto_first_nonwhitespace"]
-0   = "goto_first_nonwhitespace"
+"X" = ["extend_line_up", "extend_to_line_bounds"]
+"D" = ["ensure_selections_forward", "extend_to_line_end"]
+"0"   = "goto_first_nonwhitespace"
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
+
 "C-d" = ["half_page_down", "goto_window_center"]
 "C-u" = ["half_page_up", "goto_window_center"]
-"D" = ["ensure_selections_forward", "extend_to_line_end"]
+"C-x" = "extend_to_line_bounds"
+
+"A-w" = ":buffer-close"
+"A-/" = "repeat_last_motion"
+"A-up" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+"A-down"= ["extend_to_line_bounds", "delete_selection", "paste_after"]
+
 "F1" = ":config-open"
 "F2" = ":config-reload"
 "F3" = ":buffer-close!"
-C-x = "extend_to_line_bounds"
-X = ["extend_line_up", "extend_to_line_bounds"]
-
-
 
 [keys.normal.space]
 "i" = ":toggle lsp.display-inlay-hints"
@@ -59,7 +62,7 @@ x = ":buffer-close!"
 "," = [
     "save_selection",
     "goto_line_end",
-    ":append-output echo ',''",
+    ":append-output echo ,",
     "collapse_selection",
     "delete_selection",
     "jump_backward",
@@ -68,7 +71,7 @@ x = ":buffer-close!"
 ";" = [
     "save_selection",
     "goto_line_end",
-    ":append-output echo ';'",
+    ":append-output echo ;",
     "collapse_selection",
     "delete_selection",
     "jump_backward",

@@ -26,13 +26,13 @@ diagnostic = { modifiers = ["underlined"] } # Code diagnostics in editing area (
 'ui.text.focus' = "blue" # Selection highlight in buffer-picker or file-picker.
 'ui.text.info' = { } # Info popup contents (space mode menu).
 
-'ui.cursor' = {  } # Fallback cursor colour, non-primary cursors when there are multiple (shift-c).
-'ui.cursor.primary' = { bg = "bg1" } # The primary cursor when there are multiple (shift-c).
-'ui.cursor.insert' = { fg = "black", bg = "grey" } # The cursor in insert mode (i).
-'ui.cursor.select' = { } # The cursor in select mode (v).
-'ui.cursor.match' = { fg = "orange", bg = "diff_yellow" } # The matching parentheses of that under the cursor.
+"ui.cursor" = { fg = "base04", modifiers = ["reversed"] } # Fallback cursor colour, non-primary cursors when there are multiple (shift-c).
+"ui.cursor.primary" = { fg = "base05", modifiers = ["reversed"] } # The primary cursor when there are multiple (shift-c).
+# 'ui.cursor.insert' = { fg = "black", bg = "grey" } # The cursor in insert mode (i).
+# 'ui.cursor.select' = { } # The cursor in select mode (v).
+# 'ui.cursor.match' = { fg = "orange", bg = "diff_yellow" } # The matching parentheses of that under the cursor.
 
-'ui.selection' = { fg = "white", bg = "blue" } # All currently selected text.
+'ui.selection' = { bg = "bg_blue" } # All currently selected text.
 'ui.selection.primary' = { bg = "bg4" } # The primary selecion when there are multiple.
 
 'ui.linenr' = "grey" # Line numbers.
@@ -56,7 +56,7 @@ diagnostic = { modifiers = ["underlined"] } # Code diagnostics in editing area (
 "ui.menu" = { fg = "fg", bg = "bg2" } # Autocomplete menu.
 "ui.menu.selected" = { fg = "bg0", bg = "blue" } # Selected autocomplete item.
 
-"ui.popup" = { fg = "grey", bg = "bg2" } # Documentation popups (space-k).
+"ui.popup" = { fg = "grey", bg = "bg0" } # Documentation popups (space-k).
 'ui.popup.info' = { } # Info popups box (space mode menu).
 
 
@@ -67,7 +67,7 @@ diagnostic = { modifiers = ["underlined"] } # Code diagnostics in editing area (
 "special" = "red" # Special symbols e.g `?` in Rust, `...` in Hare.
 "attribute" = "cyan" # Class attributes, html tag attributes.
 
-"type" = "fg" # Variable type, like integer or string, including program defined classes, structs etc..
+"type" = "blue" # Variable type, like integer or string, including program defined classes, structs etc..
 'type.builtin' = { } # Primitive types of the language (string, int, float).
 'type.enum.variant' = "blue" # A variant of an enum.
 
@@ -188,12 +188,15 @@ bg_grey     = "#7a819d"
 bg_purple   = "#d38aea"
 bg_red      = "#ec7279"  
 
-bg0         = "#1e1e1e"
+bg0         = "#181818"
 bg1         = "#333648"
 bg2         = "#363a4e"
 bg3         = "#393e53"
 bg4         = "#3f445b"
 bg5         = "#7e7e89"
+
+base04      = "#b8b8b8" 
+base05      = "#d8d8d8"
 
 black       = "#181818"
 blue        = "#8FC4EB"
