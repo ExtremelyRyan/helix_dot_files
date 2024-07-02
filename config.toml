@@ -38,6 +38,9 @@ ret = ["move_line_down", "goto_first_nonwhitespace"]
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
 
+"j" = ["move_visual_line_down", "align_view_center"]
+"k" = ["move_visual_line_up", "align_view_center"]
+
 "C-d" = ["half_page_down", "goto_window_center"]
 "C-u" = ["half_page_up", "goto_window_center"]
 "C-x" = "extend_to_line_bounds"
